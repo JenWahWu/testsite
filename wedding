@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jenny & Li's Wedding</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #d4836f 0%, #c96b55 100%);
+      padding: 3rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    
+    .names {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+    
+    .ampersand {
+      font-size: 1.8rem;
+      font-style: italic;
+      margin: 0 0.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    
+    .content {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    
+    .date-section {
+      margin-bottom: 2.5rem;
+    }
+    
+    .date-label {
+      font-size: 0.9rem;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .date {
+      font-size: 2rem;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+    
+    .date-year {
+      font-size: 1rem;
+      color: #999;
+    }
+    
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #d4836f;
+      margin: 2rem auto;
+    }
+    
+    .locations-section {
+      margin-top: 2rem;
+    }
+    
+    .location-label {
+      font-size: 0.9rem;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .locations {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .location-card {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #f0f0f0;
+      transition: all 0.3s ease;
+    }
+    
+    .location-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+    
+    .location-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.7rem;
+    }
+    
+    .location-address {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .footer {
+      background: #f9f9f9;
+      padding: 2rem;
+      text-align: center;
+      border-top: 1px solid #f0f0f0;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    
+    .footer-message {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #d4836f;
+    }
+    
+    @media (max-width: 480px) {
+      .names {
+        font-size: 2rem;
+      }
+      
+      .date {
+        font-size: 1.7rem;
+      }
+      
+      .locations {
+        grid-template-columns: 1fr;
+      }
+      
+      .header {
+        padding: 2rem 1.5rem;
+      }
+      
+      .content {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="names">
+        Jenny <span class="ampersand">&</span> Li
+      </div>
+      <div class="subtitle">are getting married</div>
+    </div>
+    
+    <div class="content">
+      <div class="date-section">
+        <div class="date-label">Wedding Day</div>
+        <div class="date">September 7th</div>
+        <div class="date-year">2025</div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="locations-section">
+        <div class="location-label">Celebration Venues</div>
+        
+        <div class="locations">
+          <div class="location-card">
+            <div class="location-title">🇳🇱 Amersfoort</div>
+            <div class="location-address">Amesfoort 123</div>
+          </div>
+          
+          <div class="location-card">
+            <div class="location-title">🇮🇩 Masal</div>
+            <div class="location-address">Masal 123</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="footer-message">Join us as we celebrate our love</div>
+      <div>We look forward to celebrating with you!</div>
+    </div>
+  </div>
+</body>
+</html>
